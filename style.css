@@ -1,0 +1,172 @@
+
+/* My CSS file */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f5f1;
+    color: #383838;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Website header */
+
+header {
+    background-color: #39464b;
+    color: white;
+    padding: 15px 6%;
+}
+
+header h2 {
+    margin: 0 0 8px 0;
+    font-size: 23px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #e4c69e;
+}
+
+/* First section */
+
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 35px 8%;
+    background-color: #ebe8e1;
+}
+
+.intro-text {
+    max-width: 600px;
+}
+
+.intro h1 {
+    color: #39464b;
+    font-size: 34px;
+    margin-bottom: 5px;
+}
+
+.intro h3 {
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.photo img {
+    width: 165px;
+    height: 190px;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+/* Other sections */
+
+section:not(.intro) {
+    padding: 22px 8%;
+}
+
+section h2 {
+    color: #39464b;
+    font-size: 23px;
+    border-bottom: 1px solid #c9b99e;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+#about p {
+    max-width: 850px;
+}
+
+/* Education table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+th, td {
+    border: 1px solid #cfcfcf;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e7e3da;
+}
+
+/* Skills list */
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* Contact */
+
+#contact a {
+    color: #536e79;
+}
+
+/* Footer */
+
+footer {
+    background-color: #39464b;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 13px;
+}
+
+
+/* Mobile screen adjustment */
+
+@media screen and (max-width: 650px) {
+
+    .intro {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding: 25px 6%;
+    }
+
+    .intro img {
+        width: 135px;
+        height: 155px;
+    }
+
+    .intro h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    section:not(.intro) {
+        padding: 20px 6%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 7px;
+    }
+
+}
